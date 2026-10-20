@@ -6,9 +6,11 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:31:41 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/20 13:52:18 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/20 14:00:13 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

@@ -6,23 +6,25 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 11:24:30 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/20 13:53:12 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/20 14:05:14 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
-char	*ft_memset(char *str, char key, size_t size)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t	compt;
+	unsigned char	*bytes;
+	size_t			compt;
 
+	bytes = (unsigned char *) s;
 	compt = 0;
-	while (compt < size)
+	while (compt < n)
 	{
-		str[compt] = key;
+		bytes[compt] = (unsigned char) c;
 		compt++;
 	}
-	return (str);
+	return (s);
 }
 
 // #include <stdio.h>

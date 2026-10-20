@@ -9,7 +9,7 @@ all: $(TARGET)
 $(TARGET): $(OBJS)
 	ar -rcs $(TARGET) $(OBJS)
 
-%.o : %.c
+%.o : %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
