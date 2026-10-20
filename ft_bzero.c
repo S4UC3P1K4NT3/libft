@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:52:36 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/20 15:09:41 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/20 15:52:57 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,21 +21,22 @@ void	ft_bzero(void *s, size_t n)
 	compt = 0;
 	while (compt < n)
 	{
-		tab[compt] = '\0';
+		tab[compt] = 0;
 		compt++;
 	}
 }
 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <strings.h>
 
-int	main(void)
-{
-	char	test[50] = "Welcome to onsenfoudureste";
-	char	test2[50] = "Welcome to onsenfoudureste";
+// int	main(void)
+// {
+// 	char	test[50] = "Welcome to onsenfoudureste";
+// 	char	test2[50] = "Welcome to onsenfoudureste";
 
-	ft_bzero(test, 51);
-	printf("resultat du test donne : %s\n", test);
-	bzero(test, 7);
-	printf("resultat reel fonction : %s\n", test);
-}
+// 	ft_bzero(test, 7);
+// 	printf("resultat du test donne : %s\n", test);
+// 	bzero(test2, 7);
+// 	printf("resultat reel fonction : %s\n", test2);
+// 	return (0);
+// }
