@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 11:24:30 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/20 14:14:49 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/20 14:32:32 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char	tab;
+	unsigned char	*tab;
 	size_t			compt;
 
 	tab = (unsigned char *) s;
