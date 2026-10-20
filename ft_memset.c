@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 11:24:30 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/20 14:32:32 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/20 15:02:40 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,12 @@ void	*ft_memset(void *s, int c, size_t n)
 }
 
 // #include <stdio.h>
+// #include <string.h>
 
 // int	main(void)
 // {
 // 	char	test[50] = "Welcome to onsenfoudureste";
 
-// 	printf("resultat du test donne : %s\n", ft_memset(test, '#', 7));
+// 	printf("resultat du test donne : %s\n", (unsigned char *) ft_memset(test, '#', 7));
+// 	printf("resultat reel fonction : %s\n", (unsigned char *) memset(test, '#', 7));
 // }
