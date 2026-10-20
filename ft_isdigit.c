@@ -6,15 +6,15 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 14:54:53 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/19 14:58:24 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/20 13:52:19 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int key)
+int	ft_isdigit(int c)
 {
-    if (key >= '0' && key <= '9')
-        return 1;
-    return 0;
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }
 
 // #include <ctype.h>

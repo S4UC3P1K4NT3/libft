@@ -6,29 +6,17 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 14:58:52 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/19 15:04:50 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/20 13:52:24 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(unsigned char key)
-{
-    if ((key > 96 && key < 123) || (key > 64 && key < 91))
-        return 1;
-    return 0;
-}
+#include "libft.h"
 
-int ft_isdigit(char key)
+int	ft_isalnum(int c)
 {
-    if (key >= '0' && key <= '9')
-        return 1;
-    return 0;
-}
-
-int ft_isalnum(unsigned char key)
-{
-    if(ft_isdigit(key) == 1 || ft_isalpha(key) == 1)
-        return 1;
-    return 0;
+	if (ft_isdigit(c) || ft_isalpha(c))
+		return (1);
+	return (0);
 }
 
 // #include <ctype.h>

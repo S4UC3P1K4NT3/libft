@@ -6,17 +6,15 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 14:00:10 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/19 14:54:22 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/20 13:52:22 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
-int ft_isalpha(unsigned char key)
+int	ft_isalpha(int c)
 {
-    if ((key > 96 && key < 123) || (key > 64 && key < 91))
-        return 1;
-    return 0;
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	return (0);
 }
 
 // #include <ctype.h>

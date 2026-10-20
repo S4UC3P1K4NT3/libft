@@ -6,22 +6,23 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:40:01 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/20 11:17:57 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/20 13:52:14 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long ft_strlen(char *thestr)
-{
-    unsigned long compt;
-    compt = 0;
-    
-    while(thestr[compt] != '\0')
-    {
-        compt++;
-    }
-    return compt;
-}
+#include "libft.h"
 
+size_t	ft_strlen(const char *s)
+{
+	size_t	compt;
+
+	compt = 0;
+	while (s[compt] != '\0')
+	{
+		compt++;
+	}
+	return (compt);
+}
 
 // #include <string.h>
 // #include <stdio.h>

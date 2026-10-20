@@ -6,15 +6,15 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:05:30 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/19 15:20:22 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/20 13:52:21 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(char key)
+int	ft_isascii(int c)
 {
-    if (key >= 0 && key <= 127)
-        return 1;
-    return 0;
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }
 
 // #include <ctype.h>
