@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 11:24:30 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/20 14:05:14 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/20 14:14:49 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char	*bytes;
+	unsigned char	tab;
 	size_t			compt;
 
-	bytes = (unsigned char *) s;
+	tab = (unsigned char *) s;
 	compt = 0;
 	while (compt < n)
 	{
-		bytes[compt] = (unsigned char) c;
+		tab[compt] = (unsigned char) c;
 		compt++;
 	}
 	return (s);
