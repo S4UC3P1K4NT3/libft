@@ -6,11 +6,10 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 10:22:13 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/21 10:50:38 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/21 10:52:37 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "/sgoinfre/goinfre/Perso/rlebaill/rlebaill.h"
 #include <stdio.h>
 
 // size_t	ft_strlen(const char *s)
@@ -36,7 +35,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		pos++;
 	}
 	dst[pos] = 0;
-	return (ft_strlen(dst));
+	return (ft_strlen(src));
 }
 
 // #include <bsd/string.h>
@@ -48,8 +47,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 // 	char	dep1[50] = "test cedric";
 // 	char	arr1[50];
 
-// 	ft_strlcpy(arr, dep, 1);
+// 	printf("%ld\n", ft_strlcpy(arr, dep, 1));
 // 	printf("%s\n", arr);
-// 	strlcpy(arr1, dep1, 1);
+// 	printf("%ld\n", strlcpy(arr1, dep1, 1));
 // 	printf("%s\n", arr);
 // }
