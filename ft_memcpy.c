@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 15:22:54 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/20 16:11:19 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/21 10:50:28 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const unsigned char	*s;
 	size_t				compt;
 
+	if (!dest || !src)
+		return (NULL);
 	d = (unsigned char *) dest;
 	s = (const unsigned char *) src;
 	compt = 0;
@@ -34,11 +36,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 // int	main(void)
 // {
-// 	char	test[50] = "voici un test a copier";
-// 	char	dest[50];
-// 	char	test1[50] = "voici un test a copier";
-// 	char	dest1[50];
+// 	char	test[50] = "abcdef";
+// 	char	*dest = &test[3];
+// 	char	test2[50] = "efghij";
+// 	char	*dest2 = &test[3];
 
-// 	printf("test de renvoie de ma fonction sur 5 octets : %s\n", (char *) ft_memcpy(dest, test, 7));
-// 	printf("test de renvoie de la fonction sur 5 octets : %s\n", (char *) memcpy(dest1, test1, 7));
+// 	printf("ma fonction sur 5 octets :%s\n", (char *) ft_memcpy(dest, test, 5));
+// 	printf("la fonction sur 5 octets :%s\n", (char *) memcpy(dest2, test2, 5));
 // }
