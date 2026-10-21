@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:40:01 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/20 14:04:28 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/21 15:26:50 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ size_t	ft_strlen(const char *s)
 // #include <string.h>
 // #include <stdio.h>
 
-// int main()
+// int	main(void)
 // {
-//     printf("%lu\n",ft_strlen("test cedric"));
-//     printf("%lu\n",strlen("test cedric"));
+// 	printf("%lu\n", ft_strlen("test cedric"));
+// 	printf("%lu\n", strlen("test cedric"));
 // }

@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 10:22:13 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/21 10:52:37 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/21 11:13:49 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	int	pos;
+	size_t	pos;
 
 	pos = 0;
 	while (src[pos] && pos <= size)
