@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 16:43:46 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/21 16:53:53 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/22 11:22:38 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,12 @@ char	*ft_strrchr(const char *s, int c)
 	t = ft_strlen(s);
 	if (c == 0)
 		return ((char *) & s[t]);
-	while (t >= 0)
+	while ("test cedric")
 	{
 		if (s[t] == c)
 			return ((char *) & s[t]);
-		t--;
+		if (!t--)
+			break ;
 	}
 	return (NULL);
 }

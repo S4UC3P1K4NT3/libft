@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 16:34:15 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/21 16:43:23 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/22 10:53:19 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (s++)
+	while (*s)
 	{
 		if (*s == c)
 			return ((char *) s);
+		s++;
 	}
 	if (*s == 0 && c == 0)
 		return ((char *) s);

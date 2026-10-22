@@ -6,13 +6,13 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 16:15:48 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/21 16:33:27 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/22 10:49:34 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
-	if (c <= 'A' && c >= 'Z')
-		return (c - 32);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
 	return (c);
 }

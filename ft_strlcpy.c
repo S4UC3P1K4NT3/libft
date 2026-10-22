@@ -6,11 +6,12 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 10:22:13 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/21 11:13:49 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/22 11:22:36 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include "libft.h"
 
 // size_t	ft_strlen(const char *s)
 // {
@@ -27,15 +28,17 @@
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	pos;
+	size_t	len;
 
 	pos = 0;
-	while (src[pos] && pos <= size)
+	len = ft_strlen(src);
+	while (src[pos] && pos < size - 1)
 	{
 		dst[pos] = src[pos];
 		pos++;
 	}
 	dst[pos] = 0;
-	return (ft_strlen(src));
+	return (len);
 }
 
 // #include <bsd/string.h>
