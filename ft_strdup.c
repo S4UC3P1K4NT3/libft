@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 17:10:21 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/23 17:25:23 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/23 17:33:40 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 char	*strdup(const char *s)
 {
-	char		*dest;
-	long int	i;
+	char	*dest;
+	size_t	i;
 
 	i = 0;
-	if
 	dest = ft_calloc(ft_strlen(s) + 1, sizeof(const char));
 	if (!dest)
 		return (NULL);
