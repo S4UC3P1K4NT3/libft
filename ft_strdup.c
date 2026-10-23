@@ -6,13 +6,13 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 17:10:21 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/23 17:33:40 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/23 17:37:57 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	char	*dest;
 	size_t	i;
