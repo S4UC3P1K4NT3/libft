@@ -6,13 +6,14 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 11:43:54 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/22 16:03:35 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/23 18:13:11 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stddef.h>
+# include <stdlib.h>
 
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t nmemb, size_t size);
