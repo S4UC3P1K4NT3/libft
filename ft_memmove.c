@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/20 16:13:25 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/22 14:32:08 by gtomasin         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_memmove.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/20 16:13:25 by gtomasin         #+#    #+#              */
+/*   Updated: 2026/10/24 15:12:49 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*d;
 	const unsigned char	*s;
-	size_t				compt;
 
 	d = (unsigned char *) dest;
 	s = (const unsigned char *) src;
-	compt = 0;
 	if (dest <= src)
 		return (ft_memcpy(dest, src, n));
-	while (compt < n)
+	while (0 < n)
 	{
 		d[n - 1] = s[n - 1];
 		n--;
