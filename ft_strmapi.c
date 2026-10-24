@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/24 14:48:13 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 15:10:47 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/24 15:16:25 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,11 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	dst = malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (!dst)
 		return (NULL);
-	while ()
+	while (s[i])
 	{
+		dst[i] = f(i, s[i]);
+		i++;
 	}
+	dst[i] = 0;
+	return (dst);
 }
