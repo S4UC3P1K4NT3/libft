@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/24 16:13:35 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 17:18:23 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/24 17:20:08 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,17 @@ static size_t	intlen(long long n)
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	size_t	temp;
-	char	b;
+	size_t		temp;
+	char		b;
+	long long	nl;
 
-	temp = intlen(n);
+	nl = n;
+	if (n < 0)
+		nl = (long long) - n;
+	temp = intlen(nl);
 	while (temp > 0)
 	{
-		b = (char)(n % 10 + '0');
+		b = (char)(nl % 10 + '0');
 		write(fd, &b, 1);
 		n /= 10;
 		temp--;
