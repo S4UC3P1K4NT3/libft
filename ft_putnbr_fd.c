@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/24 16:13:35 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 17:20:52 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/24 17:22:06 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static size_t	intlen(long long n)
 	count = 0;
 	if (n < 0)
 		count++;
-	while (n > 9 || n < -9)
+	while (n > 9)
 	{
 		n = n / 10;
 		count++;
