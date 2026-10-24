@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/24 23:54:35 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/25 00:18:51 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/25 00:23:42 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 // 	t_list	*ma_liste = &node1;
 
 // 	ft_lstadd_front(&ma_liste, &node2);
-// 	printf("Index 0 (Tete de liste) : %s\n", (char *) ma_liste->content);
-// 	printf("Index 1 (element suivant) : %s\n", (char *) ma_liste->next->content);
+// 	printf("Index 0  : %s\n", (char *) ma_liste->content);
+// 	printf("Index 1  : %s\n", (char *) ma_liste->next->content);
 // 	return (0);
 // }
