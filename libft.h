@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/20 11:43:54 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/23 18:13:11 by gtomasin         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   libft.h                                           :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/20 11:43:54 by gtomasin         #+#    #+#              */
+/*   Updated: 2026/10/24 15:48:19 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,9 @@ void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+char	*ft_itoa(int n);
+char	**ft_split(char const *s, char c);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 #endif
