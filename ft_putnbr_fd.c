@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/24 16:13:35 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 17:09:37 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/24 17:14:35 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,25 +27,17 @@ static size_t	intlen(long long n)
 	return (count + 1);
 }
 
-static char	*fill(long long n)
+void	ft_putnbr_fd(int n, int fd)
 {
 	size_t	temp;
-	char	*dest;
 
 	temp = intlen(n);
-	dest[temp] = 0;
 	while (temp > 0)
 	{
-		dest[temp - 1] = (char)(n % 10 + '0');
+		write((char)(n % 10 + '0'));
 		n /= 10;
 		temp--;
 	}
-	return (dest);
-}
-
-void	ft_putnbr_fd(int n, int fd)
-{
-	write(fd, fill(n), intlen(n));
 }
 
 // int	main(void)
