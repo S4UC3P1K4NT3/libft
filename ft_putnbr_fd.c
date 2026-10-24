@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/24 16:13:35 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 17:30:03 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/24 17:38:57 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	ft_putnbr_fd(int nb, int fd)
 		nb = -nb;
 	}
 	if (nb >= 10)
-		ft_putnbr(nb / 10);
+		ft_putnbr_fd(nb / 10, fd);
 	print_n(nb % 10, fd);
 }
 
