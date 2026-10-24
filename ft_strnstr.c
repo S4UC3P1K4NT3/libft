@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/22 15:34:34 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/22 16:04:53 by gtomasin         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_strnstr.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/22 15:34:34 by gtomasin         #+#    #+#              */
+/*   Updated: 2026/10/24 15:43:42 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	while (len-- && *big)
 	{
 		val = 0;
-		while (big[val] == little[val])
+		while (big[val] == little[val] && val < len)
 		{
 			val++;
 			if (val >= ft_strlen(little))
