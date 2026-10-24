@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/24 15:22:01 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 15:54:24 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/24 17:00:20 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		f(i, &s[i]);
 		i++;
 	}
-	s[i] = 0;
 }
 
 // int	main(void)
