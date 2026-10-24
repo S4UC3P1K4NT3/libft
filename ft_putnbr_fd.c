@@ -6,50 +6,39 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/24 16:13:35 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 17:22:06 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/24 17:30:03 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-static size_t	intlen(long long n)
+static void	print_n(int n, int fd)
 {
-	size_t	count;
+	char	c;
 
-	count = 0;
-	if (n < 0)
-		count++;
-	while (n > 9)
-	{
-		n = n / 10;
-		count++;
-	}
-	return (count + 1);
+	c = n + '0';
+	write(fd, &c, 1);
 }
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int nb, int fd)
 {
-	size_t		temp;
-	char		b;
-	long long	nl;
-
-	nl = n;
-	if (n < 0)
+	if (nb == -2147483648)
 	{
-		nl = (long long) - n;
+		write(fd, "-2147483648", 11);
+		return ;
+	}
+	if (nb < 0)
+	{
 		write(fd, "-", 1);
+		nb = -nb;
 	}
-	temp = intlen(nl);
-	while (temp > 0)
-	{
-		b = (char)(nl % 10 + '0');
-		write(fd, &b, 1);
-		n /= 10;
-		temp--;
-	}
+	if (nb >= 10)
+		ft_putnbr(nb / 10);
+	print_n(nb % 10, fd);
 }
 
-// int	main(void)
-// {
-// 	ft_putnbr_fd(-56489, 1);
-// }
+int	main(void)
+{
+	ft_putnbr_fd(-56489, 1);
+}
