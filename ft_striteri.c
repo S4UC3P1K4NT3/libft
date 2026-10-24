@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/24 15:22:01 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 15:34:27 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/24 15:35:53 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	i = 0;
 	while (s[i])
 	{
-		s[i] = f(i, s[i]);
+		f(i, s[i]);
 		i++;
 	}
 	s[i] = 0;
