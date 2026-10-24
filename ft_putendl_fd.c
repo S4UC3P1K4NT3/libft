@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/24 16:10:39 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 16:12:25 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/24 16:13:08 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putendl_fd(char *s, int fd)
 	write(fd, "\n", 1);
 }
 
-int	main(void)
-{
-	ft_putendl_fd("test cedric", 1);
-}
+// int	main(void)
+// {
+// 	ft_putendl_fd("test cedric", 1);
+// }
