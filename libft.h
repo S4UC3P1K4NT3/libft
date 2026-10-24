@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/20 11:43:54 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 15:48:19 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/24 16:08:46 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stddef.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t nmemb, size_t size);
