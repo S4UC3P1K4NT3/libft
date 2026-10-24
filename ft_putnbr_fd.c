@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/24 16:13:35 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 17:20:08 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/24 17:20:52 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,10 @@ void	ft_putnbr_fd(int n, int fd)
 
 	nl = n;
 	if (n < 0)
+	{
 		nl = (long long) - n;
+		write(fd, "-", 1);
+	}
 	temp = intlen(nl);
 	while (temp > 0)
 	{
