@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 18:06:23 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/25 18:44:47 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/25 18:45:29 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 // 	node1.content = "debut";
 // 	node1.next = NULL;
-// 	node2.content = "ajouter";
+// 	node2.content = "main debuggé par rlebaill";
 // 	node2.next = NULL;
 // 	t_list	*list = NULL;
 
