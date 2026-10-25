@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 17:29:29 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/25 17:33:54 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/25 17:45:12 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,8 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (size);
 }
+
+// int	main(void)
+// {
+// 	return (0);
+// }
