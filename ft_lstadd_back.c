@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 18:06:23 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/25 18:10:10 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/25 18:10:38 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	if (!lst || !new)
 		return ;
-	ft_lstlast(&lst)->next = new;
+	ft_lstlast(*lst)->next = new;
 }
