@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/25 17:49:58 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/25 17:56:56 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/25 17:59:23 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	int	size;
-
 	if (!lst)
 		return (NULL);
 	while (lst->next != NULL)
