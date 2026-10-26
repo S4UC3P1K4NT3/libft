@@ -1,30 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                       :::      ::::::::    */
-/*   ft_strlcat.c                                      :+:      :+:    :+:    */
-/*                                                   +:+ +:+         +:+      */
-/*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
-/*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/21 11:04:20 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 17:47:29 by gtomasin        ###   ########.fr        */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/21 11:04:20 by gtomasin          #+#    #+#             */
+/*   Updated: 2026/10/26 17:18:20 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
-
-// size_t	ft_strlen(const char *s)
-// {
-// 	size_t	compt;
-
-// 	compt = 0;
-// 	while (s[compt] != '\0')
-// 	{
-// 		compt++;
-// 	}
-// 	return (compt);
-// }
 
 size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 {
@@ -33,7 +19,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 	size_t	dest_len;
 	size_t	src_len;
 
-	src_len = strlen(src);
+	src_len = ft_strlen(src);
 	i = 0;
 	j = 0;
 	while (dest[i] && i < destsize)
