@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                       :::      ::::::::    */
-/*   ft_striteri.c                                     :+:      :+:    :+:    */
-/*                                                   +:+ +:+         +:+      */
-/*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
-/*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/24 15:22:01 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 17:00:20 by gtomasin        ###   ########.fr        */
+/*                                                        :::      ::::::::   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/24 15:22:01 by gtomasin          #+#    #+#             */
+/*   Updated: 2026/10/26 12:17:10 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,19 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	}
 }
 
+// #include <stdio.h>
+
+// void	upper(unsigned int i, char *c)
+// {
+// 	if (*c >= 'a' && *c <= 'z')
+// 		*c -= 32;
+// }
+
 // int	main(void)
 // {
+// 	char	str[] = "tout mettre maj";
+
+// 	ft_striteri(str, upper);
+// 	printf("%s\n", str);
 // 	return (0);
 // }
