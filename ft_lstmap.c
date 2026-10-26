@@ -6,7 +6,7 @@
 /*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 11:42:26 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/26 12:57:00 by gtomasin         ###   ########.fr       */
+/*   Updated: 2026/10/26 13:15:13 by gtomasin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,50 +37,50 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (new_list);
 }
 
-#include <stdio.h>
-#include <stdlib.h>
+// #include <stdio.h>
+// #include <stdlib.h>
 
-void	suppr(void *content)
-{
-	free(content);
-}
+// void	suppr(void *content)
+// {
+// 	free(content);
+// }
 
-void	*upper(void *content)
-{
-	char	*str;
-	int		i;
+// void	*upper(void *content)
+// {
+// 	char	*str;
+// 	int		i;
 
-	str = ft_strdup((char *) content);
-	if (!str)
-		return (NULL);
-	i = 0;
-	while (str[i])
-	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-			str[i] = str[i] - 32;
-		i++;
-	}
-	return ((void *) str);
-}
+// 	str = ft_strdup((char *) content);
+// 	if (!str)
+// 		return (NULL);
+// 	i = 0;
+// 	while (str[i])
+// 	{
+// 		if (str[i] >= 'a' && str[i] <= 'z')
+// 			str[i] = str[i] - 32;
+// 		i++;
+// 	}
+// 	return ((void *) str);
+// }
 
-int	main(void)
-{
-	t_list	*lst;
-	t_list	*new_list;
-	t_list	*tmp;
+// int	main(void)
+// {
+// 	t_list	*lst;
+// 	t_list	*new_list;
+// 	t_list	*tmp;
 
-	lst = NULL;
-	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("bonjour")));
-	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("le")));
-	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("monde")));
-	new_list = ft_lstmap(lst, upper, suppr);
-	tmp = new_list;
-	while (tmp)
-	{
-		printf("%s\n", (char *) tmp->content);
-		tmp = tmp->next;
-	}
-	ft_lstclear(&lst, suppr);
-	ft_lstclear(&new_list, suppr);
-	return (0);
-}
+// 	lst = NULL;
+// 	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("bonjour")));
+// 	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("le")));
+// 	ft_lstadd_back(&lst, ft_lstnew(ft_strdup("monde")));
+// 	new_list = ft_lstmap(lst, upper, suppr);
+// 	tmp = new_list;
+// 	while (tmp)
+// 	{
+// 		printf("%s\n", (char *) tmp->content);
+// 		tmp = tmp->next;
+// 	}
+// 	ft_lstclear(&lst, suppr);
+// 	ft_lstclear(&new_list, suppr);
+// 	return (0);
+// }
