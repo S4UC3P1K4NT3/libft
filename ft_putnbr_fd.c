@@ -6,12 +6,11 @@
 /*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/24 16:13:35 by gtomasin         #+#    #+#              */
-/*   Updated: 2026/10/24 17:39:30 by gtomasin        ###   ########.fr        */
+/*   Updated: 2026/10/27 16:59:45 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static void	print_n(int n, int fd)
 {

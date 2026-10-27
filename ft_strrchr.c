@@ -17,15 +17,12 @@ char	*ft_strrchr(const char *s, int c)
 	size_t	t;
 
 	t = ft_strlen(s);
-	if (c == 0)
-		return ((char *) & s[t]);
-	while ("test cedric")
+	while ((unsigned char) s[t] != (unsigned char) c && t > 0)
 	{
-		if (s[t] == c)
-			return ((char *) & s[t]);
-		if (!t--)
-			break ;
+		t--;
 	}
+	if ((unsigned char) s[t] == (unsigned char) c)
+		return ((char *) &s[t]);
 	return (NULL);
 }
 

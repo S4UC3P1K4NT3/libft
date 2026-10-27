@@ -1,16 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: gtomasin <gtomasin@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/21 10:22:13 by gtomasin          #+#    #+#             */
-/*   Updated: 2026/10/22 11:43:01 by gtomasin         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_strlcpy.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: gtomasin <gtomasin@student.42lehavre.fr>  #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/21 10:22:13 by gtomasin         #+#    #+#              */
+/*   Updated: 2026/10/27 16:59:34 by gtomasin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 // size_t	ft_strlen(const char *s)
@@ -44,7 +43,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 }
 
 // #include <bsd/string.h>
-
+// #include <stdio.h>
 // int	main(void)
 // {
 // 	char	dep[50] = "test cedric";
